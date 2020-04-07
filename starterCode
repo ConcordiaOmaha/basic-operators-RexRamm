@@ -1,15 +1,47 @@
-// Example program
 #include <iostream>
 #include <string>
 
 int main()
 {
-
-  double num1 = 0; 
-  std::cout << "enter a number"; 
-  std::cin >> num1; 
-  
-  double num2 = 5 + num1; 
-  std::cout << " 5 + your number is " << num2;
     
+int x;
+std::cout << "\nWhat Operation would you like to do:\n\n";
+std::cout << "   1. Addition   2. Subtraction    3. Multiplication\n";
+std::cout << "   4. Division  5. Remainder\n\n";  
+std::cout << " Enter the number of the operation\n"; 
+std::cin >> x;
+ 
+ 
+ 
+ int num1 = 0; 
+ int num2 = 0;
+
+
+std::cout << "enter a whole number"; 
+  std::cin >> num1; 
+  std::cout << "enter a second whole number"; 
+std::cin >> num2;
+
+if (x == 1) {  
+ 
+  double num3 = num2 + num1; 
+  std::cout << " num2 + num1 " << num3;
 }
+if (x == 2) {
+ double num4 = num1 - num2;
+   std::cout << " num1 - num2 " << num4;
+}
+if (x == 3) {
+double num5 = num1 * num2;
+std::cout << " num1 * num2 " << num5;
+} 
+if (x == 4) {
+double num6 = num1 / num2;
+std::cout << " num1 / num2 " << num6;
+} 
+if (x == 5) {
+    double num7 = num1%num2;
+    std::cout << "num1 % num2 " << num7;
+}
+}
+
