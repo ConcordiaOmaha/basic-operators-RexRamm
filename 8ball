@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+    
+int x;
+std::cout << "\nHow are you feeling today on a scale of 1-10:\n\n";
+
+std::cin >> x;
+ 
+
+if (x == 1-2) {  
+
+  std::cout << " We Hope you feel better tommorow... ";
+}
+if (x == 3-5) {
+
+   std::cout << " It could be worse... ";
+}
+if (x == 6-7) {
+std::cout << " 00 ";
+} 
+if (x == 9-10) {
+std::cout << " You are having a good day ";
+}
+
+int randnum = rand() % 100;
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
