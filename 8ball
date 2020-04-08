@@ -4,38 +4,48 @@
 int main()
 {
     
-int x;
-std::cout << "\nHow are you feeling today on a scale of 1-10:\n\n";
-
-std::cin >> x;
+int userResponse;
+std::cout << "How are you feeling today on a scale of 1-10:\n";
+std::cin >> userResponse;
  
 
-if (x == 1-2) {  
+if (userResponse < 4) {  
 
-  std::cout << " We Hope you feel better tommorow... ";
+    std::cout << " We Hope you feel better tommorow...\n ";
 }
-if (x == 3-5) {
+else if(userResponse == 5){
 
-   std::cout << " It could be worse... ";
+   std::cout << " It could be worse...\n ";
 }
-if (x == 6-7) {
-std::cout << " 00 ";
+else if(userResponse != 6) {
+
+    std::cout << " NICE...\n ";
 } 
-if (x == 9-10) {
-std::cout << " You are having a good day ";
+else {
+    std::cout << " You are having a good day...\n ";
+}
+//PUT ELSE IF INSTEAD OF IF
+int randNum = rand() % 100;
+
+if (randNum < 49) 
+{
+    std::cout << " That Sucks\n ";
+}    
+else if(randNum == 50 ){
+    std::cout <<  " Better luck next time\n ";
+}    
+else if (randNum == 51){
+    std::cout << "life must be pretty good for you\n";
+}    
+else {
+    std::cout << "Atleast you are lucky\n";    
+}    
+    
+    
+    
+    
+    
 }
 
-int randnum = rand() % 100;
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-}
 
